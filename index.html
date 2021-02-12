@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Abas de navegação</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #dddddd;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .nav_tabs {
+        width: 600px;
+        height: 400px;
+        margin: 100px auto;
+        background-color: #ffffff;
+        position: relative;
+    }
+    
+    .nav_tabs ul {
+        list-style: none;
+    }
+    
+    .nav_tabs ul li {
+        float: left;
+    }
+    
+    .nav_tabs label {
+        width: 100px;
+        padding: 25px;
+        background-color: #363b48;
+        display: block;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .rd_tabs:checked~label {
+        background-color: #e54e43;
+    }
+    
+    .rd_tabs {
+        display: none;
+    }
+    
+    .content {
+        border-top: 5px solid #e54e43;
+        background-color: #ffffff;
+        display: none;
+        position: absolute;
+        height: 320px;
+        width: 600px;
+        left: 0;
+    }
+    
+    .rd_tabs:checked~.content {
+        display: block;
+    }
+    
+    .content article {
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <nav class="nav_tabs">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab1">
+                <label for="tab1">Tab 1</label>
+                <div class="content">
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit ligula eget justo ullamcorper, et condimentum velit tincidunt. In iaculis euismod augue, vel fermentum ante ultricies et. Mauris accumsan consequat augue, et luctus dolor viverra sit
+                        amet. Phasellus accumsan aliquam elit, facilisis molestie nisi bibendum nec. Sed nec lacus facilisis, consequat leo a, eleifend mi. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab2">
+                <label for="tab2">Tab 2</label>
+                <div class="content">
+                    <article>
+                        Morbi a tempus augue. Nulla ac maximus purus. Ut tortor ante, commodo interdum ornare id, dignissim efficitur magna. Sed luctus fermentum mauris at fermentum. Donec ipsum tortor, aliquet sed blandit sed, ullamcorper ullamcorper mi. In hac habitasse platea
+                        dictumst. Pellentesque lobortis massa id fringilla posuere. Nullam interdum mattis turpis, ac aliquam lacus maximus eu. Integer accumsan est scelerisque, hendrerit ligula id, congue justo. Nullam scelerisque arcu eu risus dapibus
+                        facilisis. Vivamus non dui ac erat suscipit euismod. Nulla libero tortor, tincidunt posuere sodales ac, sodales et neque. Suspendisse placerat suscipit aliquet.
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab3">
+                <label for="tab3">Tab 3</label>
+                <div class="content">
+                    <article>
+                        Mauris eget dolor vitae tortor finibus sodales. Donec rutrum porta sem. Integer placerat feugiat nulla in cursus. Nulla eget interdum tortor, vitae efficitur elit. Sed in lorem ut dolor pellentesque varius imperdiet at urna. Mauris quis nisi ipsum. Ut
+                        et purus porta libero pharetra finibus eu suscipit leo. Maecenas ullamcorper, eros quis pulvinar blandit, tellus felis finibus lacus, vel sagittis risus turpis at elit. Integer laoreet ipsum quam, id dapibus ipsum tristique vel.
+                        Cras ante est, finibus vitae imperdiet blandit, gravida sed massa. Maecenas vitae sapien mauris. Fusce auctor, leo vel scelerisque suscipit, ante odio pretium orci, vel semper lorem ante semper urna. Suspendisse laoreet porta erat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab4">
+                <label for="tab4">Tab 4</label>
+                <div class="content">
+                    <article>
+                        Donec at tortor dolor. Integer at ipsum neque. Maecenas congue tortor non velit porta dignissim. Praesent ac ante purus. Nulla nec diam et tellus porttitor vestibulum. Etiam vel augue vitae urna convallis lobortis. Aliquam luctus a tortor ac efficitur.
+                        Ut libero ex, consequat sagittis tempus non, ullamcorper ac tortor. Nulla facilisi. Nulla a mollis libero, vel dignissim diam. Sed ut diam eu mi imperdiet consectetur.
+                    </article>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
